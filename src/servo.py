@@ -5,9 +5,16 @@ from std_msgs.msg import String
 
 def callback(data):
 	rospy.loginfo(rospy.get_name()+"I heard %s",data.data)
-	pwm.start(9)
-	rospy.sleep(1.0)
-	pwm.ChangeDutyCycle(7)
+	pwm.start(7.5)
+	rospy.sleep(0.01)
+	for x in range(0,5):          
+        pwm.ChangeDutyCycle(7.5)
+        rospy.sleep(1)   
+        pwm.ChangeDutyCycle(12.5)
+        rospy.sleep(1)               
+        pwm.ChangeDutyCycle(2.5)
+        rospy.sleep(1)
+	pwm.ChangeDutyCycle(0)
 
 def listener():
 	rospy.init_node('servo', anonymous=True)
