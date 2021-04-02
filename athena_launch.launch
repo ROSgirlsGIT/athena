@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="athena__package" type="insta" name="insta"/>
+  <node pkg="athena__package" type="tags" name="tags"/>
+  <node pkg="athena__package" type="servo" name="servo"/>
+  <node pkg="athena__package" type="led" name="led"/>
+</launch>
+
