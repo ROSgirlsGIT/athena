@@ -3,5 +3,6 @@
   <node pkg="athena__package" type="tags" name="tags"/>
   <node pkg="athena__package" type="servo" name="servo"/>
   <node pkg="athena__package" type="led" name="led"/>
+  <node pkg="athena__package" type="sound" name="sound"/>
 </launch>
 
