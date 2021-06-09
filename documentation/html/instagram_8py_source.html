@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Athena: Исходный файл /home/lida/src/instagram.py</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="heart2.zhvjm.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Athena
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Цель проекта - создание механического сердца, начинающегося биться при любой активности в аккаунте Инстаграм.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('instagram_8py_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">instagram.py</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="instagram_8py.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespaceinstagram.html">    1</a></span>&#160;<span class="comment">#!/usr/bin/env python3</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> rospy</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">from</span> std_msgs.msg <span class="keyword">import</span> String</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> time</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">from</span> instpector <span class="keyword">import</span> Instpector, endpoints</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">#Объявление инстпектора и вход в учетную запись Инстаграм</span></div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#ac7d9ede495523706f1425d9b51f4f9f4">    8</a></span>&#160;instpector = Instpector()</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;instpector.login(<span class="stringliteral">&quot;login&quot;</span>, <span class="stringliteral">&quot;password&quot;</span>)</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#a50ba2d11171776c856eb10848cfa8137">   11</a></span>&#160;profile = endpoints.factory.create(<span class="stringliteral">&quot;profile&quot;</span>, instpector)</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#a4891521bea0435b1aca8ccd7a63db9e0">   12</a></span>&#160;followers = endpoints.factory.create(<span class="stringliteral">&quot;followers&quot;</span>, instpector)</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#ada8c7eda1d408d0aef542ee32269bc6a">   13</a></span>&#160;timeline = endpoints.factory.create(<span class="stringliteral">&quot;timeline&quot;</span>, instpector)</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">#Сюда пишем название аккаунта Инстаграм, за активностью на котором будем следить</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#a8bece201b6d8e393b51581bc4e470c0e">   16</a></span>&#160;parse_profile = profile.of_user(<span class="stringliteral">&quot;account&quot;</span>)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#ade8966563212baccde9bc5fe777c5fd9">   18</a></span>&#160;followers_count = 0</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#aa9dc957c9f98d9a209f575061ec5efa1">   19</a></span>&#160;followers_count_prev = 0</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#a29bf3c511c43d273c264746f026ee53c">   20</a></span>&#160;post_count = 0</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#a92a1f488edd684aa56b7c57a29c336ec">   21</a></span>&#160;likes = []</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#a88c7e2fdba3f5fe772bc3a65ddd60261">   22</a></span>&#160;likes_prev = []</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#a1f9ad0e770876b6de73400cc836e6cfc">   23</a></span>&#160;comments = []</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#ae66e0597a735844afe997820b916e0b9">   24</a></span>&#160;comments_prev = []</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceinstagram.html#a99172e4d3250803acd954eda5e0e8b0d">   26</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespaceinstagram.html#a99172e4d3250803acd954eda5e0e8b0d">data</a>():</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">#Проверяем, произошли ли какие-нибудь изменения</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">while</span> <span class="keywordflow">not</span> rospy.is_shutdown():</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        pub = rospy.Publisher(<span class="stringliteral">&#39;chatter&#39;</span>, String, queue_size=10)</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        rospy.init_node(<span class="stringliteral">&#39;insta&#39;</span>, anonymous=<span class="keyword">True</span>)</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        rate = rospy.Rate(10)</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        post_count = 0</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        likes_prev = likes</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        comments_prev = comments</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        likes = []</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        comments = []</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        followers_count_prev = followers_count</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">for</span> post <span class="keywordflow">in</span> timeline.of_user(parse_profile.id):</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            post_count += 1</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            likes.append(post.like_count)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            comments.append(post.comment_count)</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        followers_count = parse_profile.followers_count</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> likes_prev != [] <span class="keywordflow">or</span> comments_prev != []:</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">for</span> index <span class="keywordflow">in</span> range(post_count):</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            </div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">if</span> likes_prev[index] &lt; likes[index] <span class="keywordflow">or</span> comments_prev[index] &lt; comments[index] <span class="keywordflow">or</span> followers_count_prev &lt; followers_count:</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="comment">#Если изменения произошли, сердце начинает биться</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    beats = <span class="stringliteral">&quot;Beats!&quot;</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                    rospy.loginfo(beats)</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                    pub.publish(beats)</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                    rate.sleep()</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordflow">if</span> __name__ == <span class="stringliteral">&#39;__main__&#39;</span>:</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">try</span>:</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="namespaceinstagram.html#a99172e4d3250803acd954eda5e0e8b0d">data</a>()</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">except</span> rospy.ROSInterruptException:</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">pass</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div><div class="ttc" id="namespaceinstagram_html_a99172e4d3250803acd954eda5e0e8b0d"><div class="ttname"><a href="namespaceinstagram.html#a99172e4d3250803acd954eda5e0e8b0d">instagram.data</a></div><div class="ttdeci">def data()</div><div class="ttdef"><b>Definition:</b> <a href="instagram_8py_source.html#l00026">instagram.py:26</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="instagram_8py.html">instagram.py</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

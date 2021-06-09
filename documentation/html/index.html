@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Athena: Описание</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="heart2.zhvjm.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Athena
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Цель проекта - создание механического сердца, начинающегося биться при любой активности в аккаунте Инстаграм.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('index.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Описание </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Ссылка на github: <a href="https://github.com/ROSgirlsGIT/athena">https://github.com/ROSgirlsGIT/athena</a> </p><h2>Идея проекта Афина 1.0:</h2>
+<p>Идея проекта в том, чтобы поместить механическое сердце в грудь статуи Афины. Сердце должно биться при любой активности в аккаунте Instagram. </p><h2>Афина 2.0 -</h2>
+<p>Развитие уже существующего проекта Афина 1.0. Наша задача - усовершенствовать его, устранить неполадки, поместить механическое сердце в тело Афины и подготовить проект к участию в выставке в резиденции Art&amp;Science. </p><h2>С чего мы начинали?</h2>
+<h3>Программная часть</h3>
+<p>Использовано: Python, ROS, Instpector(<a href="https://github.com/niuware/instpector">https://github.com/niuware/instpector</a>) Присутствуют три программы: для получения данных о лайках, комментариях и подписках, для получения данных о использовании хэштега, для управления сервоприводом. Программа, управляющая сервоприводом, создает вращение по кругу в одном направлении. </p><h3>Аппаратная часть</h3>
+<p>Использовано: Raspberry Pi 4, сервопривод постоянного вращения DS04-NFC Собрано сердце, управляемое сервоприводом через Raspberry Pi.</p>
+<h2>Краткое описание используемых программ</h2>
+<ul>
+<li><a class="el" href="instagram_8py.html">instagram.py</a> Программа для получения данных о лайках, комментариях и подписках в Инстаграм. Для получения данных используется Instpector(<a href="https://github.com/niuware/instpector">https://github.com/niuware/instpector</a>).</li>
+<li><a class="el" href="led_8py.html">led.py</a> Программа управления светодиодной лентой. Мигания ленты синхронизированы с биением сердца. Используется библиотека RPi.GPIO.</li>
+<li><a class="el" href="servo_8py.html">servo.py</a> Программа для управления сервоприводом. Используется библиотека RPi.GPIO.</li>
+<li><a class="el" href="sound_8py.html">sound.py</a> Программа для воспроизведения звука. Используется библиотека pyglet.</li>
+<li><a class="el" href="tags_8py.html">tags.py</a> Программа для получения данных об отметках в Инстаграм.</li>
+</ul>
+<p>Исходный код всех программ можно посмотреть во вкладке "Файлы". </p><h2>Процесс работы</h2>
+<p>В процессе работы мы:</p><ul>
+<li>Изучили принцип работы с ROS</li>
+<li>Выявили причину задерки перед биением сердца</li>
+<li>Написали программу для плавной подсветки, работающей синхронно с биением сердца <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;for x in range(0,5):</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;#Два цикла for перебирают значения мощности подсветки, чтобы она плавно становилась ярче и затухала</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;        for pow in range (1, 101, 1):</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;                led.ChangeDutyCycle(pow)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                rospy.sleep(0.015)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        for pow in range (100, 0, -1):</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;                led.ChangeDutyCycle(pow)</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                rospy.sleep(0.015)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;led.ChangeDutyCycle(0)</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;led.stop()</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;GPIO.cleanup()</div></div><!-- fragment --></li>
+<li>Модифицировали программу управления сервоприводом для получения более естественного сердцебиения <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;    for x in range(0,5):</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;#Значения в ChangeDutyCycle() и rospy.sleep() подобраны таким образом, чтобы сердцебиение было максимально похоже на реальное</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;        pwm.ChangeDutyCycle(7.5)</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        rospy.sleep(0.2)   </div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        pwm.ChangeDutyCycle(12.5)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        rospy.sleep(0.6)               </div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        pwm.ChangeDutyCycle(2.5)</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        rospy.sleep(0.2)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        pwm.ChangeDutyCycle(7.5)</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        rospy.sleep(0.1)</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    pwm.ChangeDutyCycle(0)</div></div><!-- fragment --></li>
+<li>Разобрались с принципом подключения новых компонентов к Raspberry Pi</li>
+<li>Подключили светодиодную ленту <div class="image">
+<img src="sheme2.jpg"  alt="alt text" title="Подключение светодиодной ленты к Raspberry Pi"/>
+</div>
+</li>
+<li>Написали программу для воспроизведения звука сердцебиения <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#Передаём путь до необходимой нам мелодии, загруженной в Raspberry Pi</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    song = pyglet.media.load(&#39;/home/pi/sounds/serdce.mp3&#39;)</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    song.play()</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    pyglet.app.run()</div></div><!-- fragment --></li>
+<li>Подключили колонки для воспроизведения звука</li>
+<li>Сделали "гирлянду" из светодиодной ленты для удобства её прикрепления к туловищу</li>
+<li>Разработали чертеж креплений сердца к туловищу <div class="image">
+<img src="chertezh2.jpg"  alt="alt text" title="Чертеж необходимых креплений"/>
+</div>
+</li>
+<li>Вырезали крепления с помощью лазерного резака</li>
+<li>Выпилили отверстия в ногах для вывода проводов</li>
+</ul>
+<h3>Подключении светодиодной ленты</h3>
+<p>Использовано:</p><ul>
+<li>Светодиодная лента на 12V.</li>
+<li>Транзистор n-типа IRLZ34N, рассчитанный на нагрузку ленты и напряжение 12V.</li>
+<li>Сам Raspberry PI.</li>
+<li>Соединительные провода.</li>
+<li>Мощный блок питания на 12V.</li>
+</ul>
+<h3>Подключение колонок</h3>
+<p>Использовано:</p><ul>
+<li>Колонки Flarx HB-S06. Преимущество данных колонок в том, что они лёгкие и их без проблем можно приклеить к телу на двустронний скотч.</li>
+<li>Jack 3.5. Подключение колонок к Raspberry Pi происходило напрямую. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>
